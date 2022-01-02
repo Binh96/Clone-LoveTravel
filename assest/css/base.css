@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+* a{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+}
+h1, p, h2, h3, h4, span, h5, h6,a{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --white-color: #fff;
+    --primary-color: #555;
+    --secondary-color: #9a9a9a; 
+    --purple-color: #ba71da;
+    --pink-color: #f76570;
+    --blue-color: #14b9d5;
+    --green-color: #1bbc9b;
+    --yellow-color: #ffd105;
+    --orange-color: #f3a46b;
+    --border: 3px;
+}
+
+.text-label{
+    letter-spacing: 1px;
+    font-size: 8px;
+    line-height: 10px;
+    display: block;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    color: var(--white-color);
+}
+
+.text-label.secondary-text-label{
+    font-size: 10px;
+    line-height: 10px;
+    border-radius: var(--border);
+}
+
+.text-label.text-label--green{
+    background-color: var(--green-color);
+}
+
+.text-label.text-label--pink{
+    background-color: var(--pink-color);
+}
+
+.text-label.text-label--blue{
+    background-color: var(--blue-color);
+}
+
+.no-border{
+    border-radius: 0;
+}
+
+.pd-50{
+    padding: 0 50px;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mr-15{
+    margin: 15px 0 ;
+}
+
+.lh-27{
+    line-height: 27px !important;
+}
+
+.ta-left{
+    text-align: left;
+}
+
+.t-lower{
+    text-transform: lowercase;
+}
+
+.menu-on-rightside.show{
+    display: block;
+}
+
+.underline-text{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.underline-text::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: calc(100% - 12px);
+    left: 0;
+    right: 0;
+    height: 5px;
+}
+
+
+.underline-text--purple.underline-text::after{
+    background-color: var(--purple-color);
+}
+
+.underline-text--yellow.underline-text::after{
+    background-color: var(--yellow-color);
+}
+
+.underline-text--orange.underline-text::after{
+    background-color: var(--orange-color);
+}
+
+.underline-text--green.underline-text::after{
+    background-color: var(--green-color);
+}
+
+.underline-text--blue.underline-text::after{
+    background-color: var(--blue-color);
+}
+
+.underline-text--pink.underline-text::after{
+    background-color: var(--pink-color);
+}
+
+
+.btn{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 8px 20px 5px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1;
+}
+
+.btn.btn-size--medium{
+    padding: 5px 20px;
+}
+
+.btn.btn-size--large{
+    padding: 15px 35px;
+}
+
+.btn.btn--white{
+    background-color: var(--white-color);
+}
+
+.btn.btn-color-yellow{
+    background-color: var(--yellow-color);
+}
+
+.btn.btn-color--purple{
+    background-color: var(--purple-color);
+}
+
+.btn.btn-color--pink{
+    background-color: var(--pink-color);
+}
+
+.btn.btn-color--green{
+    background-color: var(--green-color);
+}
+
+.btn.btn-color--blue{
+    background-color: var(--blue-color);
+}
+
+.btn.btn--yellow{
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+
+.btn.btn--pink{
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+
+.btn.btn--purple{
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+
+.btn.btn--green{
+    background: linear-gradient(to right, #1bbc9b 0%, #1bbc63 100%);
+}
+
+.btn.btn--orange{
+    background: linear-gradient(to right, #f3a46b 0%, #f3c96b 100%);
+}
+
+.btn.btn--blue{
+    background: linear-gradient(to right, #14b9d5 0%, #14d5b1 100%)
+}
+
+.active{
+    display: block;
+    animation: fadeIn ease-in 0.8s;
+}
+
+.hide{
+    display: none;
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes slideOut{
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(100%);
+    }
+}
